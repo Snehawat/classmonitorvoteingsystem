@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class Monitor Vote</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Optional: for styling -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+  <h1>Class Monitor Vote</h1>
+  
+  <div id="vote-form">
+    <h2>Vote for Class Monitor</h2>
+    <form id="votingForm">
+      <label for="studentName">Student Name:</label>
+      <input type="text" id="studentName" required>
+      
+      <label for="monitorChoice">Choose Monitor:</label>
+      <select id="monitorChoice" required>
+        <option value="sneha">Sneha</option>
+        <option value="radha">Radha</option>
+        <option value="savi">Savi</option>
+      </select>
+      
+      <button type="submit">Vote</button>
+    </form>
+  </div>
+  
+  <div id="results">
+    <h2>Voting Results</h2>
+    <div id="sneha">
+      <h3>Sneha</h3>
+      <ul class="voters-list" id="snehaVoters"></ul>
+      <p>Total Votes: <span id="snehaVotes">0</span></p>
+    </div>
+    <div id="radha">
+      <h3>Radha</h3>
+      <ul class="voters-list" id="radhaVoters"></ul>
+      <p>Total Votes: <span id="radhaVotes">0</span></p>
+    </div>
+    <div id="savi">
+      <h3>Savi</h3>
+      <ul class="voters-list" id="saviVoters"></ul>
+      <p>Total Votes: <span id="saviVotes">0</span></p>
+    </div>
+    <h3>Total Votes: <span id="totalVotes">0</span></h3>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
+
